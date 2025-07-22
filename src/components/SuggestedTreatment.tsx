@@ -13,7 +13,8 @@ const SuggestedTreatment: React.FC<Props> = ({ diagnoses }) => {
 
   const handleClick = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/suggestedTreatment', {
+      // const response = await fetch('http://localhost:8000/api/suggestedTreatment', {
+      const response = await fetch('https://clinical-support-tool-backend.onrender.com/api/suggestedTreatment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ diagnosis: diagnoses }),
