@@ -9,7 +9,7 @@
 
 import axios from 'axios';
 
-const BACKEND_URL = 'https://clinical-support-tool-backend.onrender.com/api';
+const BACKEND_URL = 'https://clinical-support-tool-backend.onrender.com';
 
 export default axios.create({
   baseURL: BACKEND_URL,
